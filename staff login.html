@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>staff</title>
+    <link rel="stylesheet" href="staff.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap" rel="stylesheet">
+<script>
+function loginValidation(){
+    var staffId = document.getElementById("staff_id").value
+    if(staffId==""){
+       window.alert("logged in successfully"); 
+    }else{
+       window.alert("Logged in"); 
+    }
+}
+</script>
+
+</head>
+<body>
+    <main>
+        <div class="background">
+            <div class="text">
+                <h1>Login</h1>
+                <p>If Admin? <a href="admin login.html">Admin</a></p>
+                
+                
+                 
+            </div>
+            <div class="box">
+                <form class="form">
+                    <label>Staff_Id</label>
+                    <input type="text" id="staff_id" class="staff_id"  required>
+                    <label>Password</label>
+                    <input type="password" class="password"  required>
+                    <a align="center" onclick="loginValidation()" class="button" href="staff login page.html">LOGIN</a>
+                    <!--<input type="submit" class="button" value="LogIn"> -->                
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

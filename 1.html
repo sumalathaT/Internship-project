@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Html CRUD with Pure JavaScript
+    </title>
+    <link rel="stylesheet" href="1.css">
+
+    <style>
+body {
+  background-image: url('data.jpg');
+}
+</style>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>staff_id*</label><label class="validation-error hide" id="staff_idValidationError">This field is required.</label>
+                        <input type="text" name="staff_id" id="staff_id">
+                    </div><br>
+                    <div>
+                        <label>Full name</label>
+                        <input type="text" name="fullname" id="fullname">
+                    </div><br>
+                    <div>
+                        <label>Phone No</label>
+                        <input type="text" name="phoneno" id="phoneno">
+                    </div><br>
+                    <div>
+                        <label>Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                     <button onclick="goBack()">Go Back</button>
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+
+                </form>
+            </td>
+           
+           
+            <td>
+           
+                <table class="list" id="staffdetails">
+                    <thead>
+                        <tr>
+                            <th>staff_id</th>
+                            <th>Full name</th>
+                            <th>phone no</th>
+                            <th>Email</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                   </tbody>
+                </table>
+            </td>
+        </tr>
+        
+
+   </table>
+
+   
+   
+    <script src="1.js"></script>
+     
+
+</body>
+
+
+</html>
+
